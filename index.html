@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="/static/css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="/static/js/index.js"></script>
+  <title>Stock Tracker</title>
+</head>
+<body>
+<section>
+  <h1>Stock Tracker</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        <div id="imaginary_container"> 
+          <div class="input-group stylish-input-group">
+            <input type="text" class="form-control"  placeholder="Search By Stock Name" name="search_box" id="search_box">
+            <span class="input-group-addon">
+                <button type="submit" class="searchbtn">
+                    <span class="glyphicon glyphicon-search"></span>
+                </button>  
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="table-container">
+    <div class="tbl-header">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <thead>
+          <tr>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Open</th>
+            <th>High</th>
+            <th>Low</th>
+            <th>Close</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+    <div class="tbl-content">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tbody>
+          {}
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div id="no_search_results"></div>
+</section>
+
+</body>
+</html>
