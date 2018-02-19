@@ -87,7 +87,7 @@ class StockTracker(object):
 		cherrypy.log("START: index:StockTracker")
 		data = []
 		cherrypy.log("Creating a Redis instance")
-		r = redis.StrictRedis()
+		r = redis.StrictRedis(decode_responses=True)
 		result = ""
 		cherrypy.log("Fetching top 10 stocks stored in Redis DB")
 		for i in range(2,12):
@@ -114,7 +114,7 @@ class StockTrackerWebService(object):
 		cherrypy.log("START: search:StockTrackerWebService method=GET name="+name)
 
 		cherrypy.log("Creating Redis instance")
-		r = redis.StrictRedis()
+		r = redis.StrictRedis(decode_responses=True)
 
 		search = ""
 		keys = []
